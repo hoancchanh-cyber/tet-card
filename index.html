@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Thiệp Chúc Tết - Xã Ngô Mây</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Thiệp Chúc Tết Bính Ngọ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<canvas id="fireworks"></canvas>
+  <!-- Nhạc xuân (YouTube) -->
+  <iframe
+    id="music"
+    src="https://www.youtube.com/embed/Z1kYwz4BzPE?autoplay=0&loop=1"
+    allow="autoplay"
+    frameborder="0">
+  </iframe>
 
-<div class="card">
-    <h1>TRUNG TÂM PHỤC VỤ HÀNH CHÍNH CÔNG<br>XÃ NGÔ MÂY</h1>
+  <div class="card">
+    <h1>🎊 CHÚC MỪNG NĂM MỚI 🎊</h1>
+
+    <h2>TRUNG TÂM PHỤC VỤ HÀNH CHÍNH CÔNG<br>XÃ NGÔ MÂY</h2>
 
     <p>
-        KÍNH CHÚC QUÝ ĐỒNG CHÍ LÃNH ĐẠO<br>
-        CÁN BỘ - CÔNG CHỨC<br>
-        NGƯỜI HOẠT ĐỘNG KHÔNG CHUYÊN TRÁCH<br>
-        HỢP ĐỒNG LAO ĐỘNG<br>
-        CÙNG TOÀN THỂ BÀ CON NHÂN DÂN
+      KÍNH CHÚC QUÝ ĐỒNG CHÍ LÃNH ĐẠO – CÁN BỘ – CÔNG CHỨC – NGƯỜI HOẠT ĐỘNG KHÔNG CHUYÊN<br>
+      TRÁCH – HỢP ĐỒNG LAO ĐỘNG<br><br>
+      CÙNG TOÀN THỂ BÀ CON NHÂN DÂN
     </p>
 
-    <h2>ĐÓN TẾT BÍNH NGỌ</h2>
+    <h3>ĐÓN TẾT BÍNH NGỌ</h3>
 
-    <h3>AN KHANG THỊNH VƯỢNG<br>VẠN SỰ NHƯ Ý</h3>
+    <h2 class="highlight">
+      AN KHANG THỊNH VƯỢNG<br>
+      VẠN SỰ NHƯ Ý
+    </h2>
 
-    <button onclick="toggleMusic()">🎵 Bật / Tắt Nhạc Xuân</button>
-</div>
+    <div class="buttons">
+      <button onclick="toggleMusic()">🎵 Bật / Tắt nhạc</button>
+      <button onclick="firework()">🎆 Pháo hoa</button>
+    </div>
+  </div>
 
-<iframe id="music"
-    src="https://www.youtube.com/embed/4fY6Wm6h7nM?enablejsapi=1&loop=1&playlist=4fY6Wm6h7nM"
-    frameborder="0"
-    allow="autoplay">
-</iframe>
+  <canvas id="fireworks"></canvas>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
